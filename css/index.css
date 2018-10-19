@@ -1,0 +1,14 @@
+#canvas-background{
+	width: 100%;
+	background: #F3F3F3;
+}
+.background-logo{
+	position: absolute;
+    top: 45%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.background-img {
+	margin: 0 auto;
+}
