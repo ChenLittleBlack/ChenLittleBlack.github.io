@@ -1,7 +1,7 @@
-$(function() {
+$(function () {
     navbarActive();
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         navbarActive();
     });
 });
