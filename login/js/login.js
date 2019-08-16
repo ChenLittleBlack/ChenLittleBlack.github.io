@@ -31,7 +31,7 @@ function showCheck(a) {
 $(document).keypress(function (e) {
     // 回车键事件
     if (e.which == 13) {
-        $('input[type="button"]').click();
+        $('input#btn_login').click();
     }
 });
 //粒子背景特效
