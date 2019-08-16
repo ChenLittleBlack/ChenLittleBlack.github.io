@@ -79,7 +79,7 @@ layui.use('layer', function () {
         color: '#777'
     });
     //非空验证
-    $('input[type="button"]').click(function () {
+    $('input#btn_login').click(function () {
         var login = $('input[name="login"]').val();
         var pwd = $('input[name="pwd"]').val();
         var code = $('input[name="code"]').val();
@@ -154,7 +154,10 @@ layui.use('layer', function () {
                     }, 2400);
                 })
         }
-    })
+    });
+    $('input#btn_goToIndex').click(function () {
+        window.location.href = "../index.html";
+    });
 })
 var fullscreen = function () {
     elem = document.body;
