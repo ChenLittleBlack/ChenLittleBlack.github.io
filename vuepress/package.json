@@ -5,8 +5,6 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "cat:dev": "vuepress dev cat",
-    "cat:build": "vuepress build cat"
+    "docs:build": "vuepress build docs"
   }
 }
