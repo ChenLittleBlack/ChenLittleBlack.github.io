@@ -1,9 +1,12 @@
 {
   "devDependencies": {
-    "vuepress": "^1.1.0"
+    "vuepress": "^1.1.0",
+    "vuepress-plugin-cat": "^1.0.3"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "cat:dev": "vuepress dev cat",
+    "cat:build": "vuepress build cat"
   }
 }
