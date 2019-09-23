@@ -1,5 +1,5 @@
 module.exports = {
-    base: "/vuepress/",
+    base: "/",
     title: 'Hello VuePress',
     description: 'Just playing around'
 }
