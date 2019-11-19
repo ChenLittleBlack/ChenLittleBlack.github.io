@@ -5,7 +5,7 @@
  * 转载或使用时，还请保留以上信息，谢谢！
  */
 $(document).ready(function () {
-    /* 复制结果 */ 
+    /* 复制结果 */
     var clipboard = new ClipboardJS('.btn-copy');
     clipboard.on('success', function(e) {
         if (e.trigger.disabled === false || e.trigger.disabled === undefined) {
@@ -23,7 +23,7 @@ $(document).ready(function () {
         showTips('复制下面的地址');
         $outputLink.val(link).focus().select();
         
-        /* 尝试缩短网址 */ 
+        /* 尝试缩短网址 */
         $.ajax({
             url: 'api.php?url=' + encodeURIComponent(link),
             dataType: 'json',
@@ -33,7 +33,7 @@ $(document).ready(function () {
         });
     });
     
-    /* 预览 */ 
+    /* 预览 */
     var $container = $('.container');
     $container.on('click', '#btn-preview', function () {
         var link = $outputLink.val();
@@ -42,7 +42,7 @@ $(document).ready(function () {
         }
     });
     
-    /* 回车搜索 */ 
+    /* 回车搜索 */
     var $kw = $('#kw');
     $kw.on('keydown', function (e) {
         if (e.keyCode == 13) {
@@ -90,21 +90,21 @@ $(document).ready(function () {
     }
 });
 
-/* 显示提示信息 */ 
+/* 显示提示信息 */
 function showTips(tips) {
     $('#instructions').html(tips);
 }
 
-/* 弹出关于信息 */ 
+/* 弹出关于信息 */
 function showAbout() {
     var windowWidth = $(window).width(),
        windowHeight = $(window).height(),
-        popupHeight = $("#about-box").height(),     
-         popupWidth = $("#about-box").width(); 
+        popupHeight = $("#about-box").height(),
+         popupWidth = $("#about-box").width();
     
     $("#about-box").css({
         "position": "absolute",
-            "left": windowWidth / 2 - popupWidth / 2,
-             "top": windowHeight / 2 - popupHeight / 2
+        "left": windowWidth / 2 - popupWidth / 2,
+        "top": windowHeight / 2 - popupHeight / 2
     }).fadeIn(200); 
 }
