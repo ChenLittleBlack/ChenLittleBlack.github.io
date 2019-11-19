@@ -25,8 +25,7 @@ $(document).ready(function () {
         
         /* 尝试缩短网址 */
         $.ajax({
-            /*url: 'api.php?url=' + encodeURIComponent(link),*/
-			url: 'http://sa.sogou.com/gettiny?url=' + link,
+            url: 'api.php?url=' + encodeURIComponent(link),
             dataType: 'json',
             success: function (data) {
                 if(data.code == 200) $outputLink.val(data.result).focus().select();
