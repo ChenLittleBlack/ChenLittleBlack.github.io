@@ -2,7 +2,9 @@
 /**
  * 短网址 API
  * 编写：mengkun(https://mkblog.cn)
- */
+*/
+
+header('Access-Control-Allow-Origin:*');
 
 if(isset($_GET['url']) && $_GET['url']) {
     $result = array(
@@ -25,6 +27,6 @@ die(json_encode($result));
  * @return 缩短后的网址
  */
 function shortUrl($longUrl) {
-    $result = @file_get_contents('https://sohu.gg/api?key=ApiKey&url='.urlencode($longUrl));
+    $result = @file_get_contents('http://sa.sogou.com/gettiny?url='.urlencode($longUrl));
     return $result? $result: $longUrl;
 }
