@@ -2,75 +2,15 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8"/>
-    <!-- 关键词 -->
-    <meta name="keywords"
-          content="陈祯乐,陈小黑,小黑不是真的黑,LittleBlack,ChenLittleBlack,javascript,jquery,java,sql,ios,android,软件,编程,开发，live2d"/>
-    <meta name="description" content="陈祯乐的个人网站"/>
-    <!-- Open Graph Protocol(开放内容协议) -->
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://www.ldkroom.top/"/>
-    <meta property="og:title" content="陈祯乐的个人网站"/>
-    <meta property="og:description" content="陈祯乐的个人网站"/>
-    <meta property="og:tag" content="index"/>
-    <!-- 百度站长验证 -->
-    <meta name="baidu-site-verification" content="oCTAbeMAoY"/>
-    <!-- 样式 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>一个网站 - 首页</title>
-    <link rel="shortcut icon" type="image/x-icon" href="icons/yanjing.ico"/>
     <!-- 框架 -->
-    <link rel="stylesheet" type="text/css" href="css/animate/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/animate/animate.min.css"/>
     <!-- 自创 -->
-    <link rel="stylesheet" type="text/css" href="css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
 </head>
 <body style="height: 2000px;">
 <!-- 导航菜单 -->
-<nav class="navbar navbar-fixed-top">
-    <div class="navbar-nav clearfix">
-        <div class="animated zoomIn" style="float: left;">
-            <a class="nav-logo" href="index.html" title="这只是一个网站">
-                <img src="images/logo.png" style="float: left;height: 50px;"/>
-                <img src="images/logo_word.png" style="height: 50px;"/>
-            </a>
-        </div>
-        <div class="animated zoomIn" style="float: right;">
-            <ul class="navbar-menu">
-                <li>
-                    <a href="#" class="nav-active">
-                        <span>首页</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="lmbtfy/index.html">
-                        <span>让我帮你百度一下</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="xiaomi/index.html">
-                        <span>第两个标签</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>第three个标签</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>第Ⅳ个标签</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="login/login.html">
-                        <span>登录(这个可以点)</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<nav id="nav" class="navbar navbar-fixed-top"></nav>
 <!-- 背景动画 -->
 <canvas id="canvas-background"></canvas>
 <div class="background-logo">
@@ -80,12 +20,15 @@
     </div>
 </div>
 
-<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<!--公共js-->
+<script type="text/javascript" src="/js/common.js"></script>
+<!--导航栏js-->
+<script type="text/javascript" src="/js/nav.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
 <!-- 背景动画所需js -->
-<script type="text/javascript" src="js/greensock/TweenLite.min.js"></script>
-<script type="text/javascript" src="js/greensock/EasePack.min.js"></script>
-<script type="text/javascript" src="js/canvas-background.js"></script>
+<script type="text/javascript" src="/js/greensock/TweenLite.min.js"></script>
+<script type="text/javascript" src="/js/greensock/EasePack.min.js"></script>
+<script type="text/javascript" src="/js/canvas-background.js"></script>
 <!-- 引入猫猫 -->
 <script src="/live2d/L2Dwidget.min.js"></script>
 <script type="text/javascript">
@@ -110,7 +53,7 @@
       opacityDefault: 0.8,
       opacityOnHover: 0.2,
     }
-  })
+  });
 </script>
 </body>
 </html>
