@@ -2,18 +2,16 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8"/>
-    <!--百度站长平台-->
-    <meta name="baidu-site-verification" content="GagKiP9e3u" />
     <title>一个网站 - 首页</title>
-    <!-- 框架 -->
+    <!--框架-->
     <link rel="stylesheet" type="text/css" href="/css/animate/animate.min.css"/>
-    <!-- 自创 -->
+    <!--自创-->
     <link rel="stylesheet" type="text/css" href="/css/index.css"/>
 </head>
 <body style="height: 2000px;">
-<!-- 导航菜单 -->
+<!--导航菜单-->
 <nav id="nav" class="navbar navbar-fixed-top"></nav>
-<!-- 背景动画 -->
+<!--背景动画-->
 <canvas id="canvas-background"></canvas>
 <div class="background-logo">
     <div style="display: inline-block;width: 100%;">
@@ -26,36 +24,38 @@
 <script type="text/javascript" src="/js/common.js"></script>
 <!--导航栏js-->
 <script type="text/javascript" src="/js/nav.js"></script>
+<!--页面js-->
 <script type="text/javascript" src="/js/index.js"></script>
-<!-- 背景动画所需js -->
+<!--背景动画所需js-->
 <script type="text/javascript" src="/js/greensock/TweenLite.min.js"></script>
 <script type="text/javascript" src="/js/greensock/EasePack.min.js"></script>
 <script type="text/javascript" src="/js/canvas-background.js"></script>
-<!-- 引入猫猫 -->
+<!--引入猫猫-->
 <script src="/live2d/L2Dwidget.min.js"></script>
 <script type="text/javascript">
-  L2Dwidget.init({
-    model: {
-      jsonPath: '/live2d/cat/tororo/assets/tororo.model.json',
-    },
-    display: {
-      superSample: 2,
-      width: 100,
-      height: 100,
-      position: 'right',
-      hOffset: 0,
-      vOffset: 0,
-    },
-    mobile: {
-      show: true,
-      scale: 1,
-      motion: true,
-    },
-    react: {
-      opacityDefault: 0.8,
-      opacityOnHover: 0.2,
-    }
-  });
+    L2Dwidget.init({
+        model: {
+            jsonPath: '/live2d/cat/tororo/assets/tororo.model.json',
+        },
+        display: {
+            superSample: 2,
+            width: 100,
+            height: 100,
+            position: 'right',
+            hOffset: 0,
+            vOffset: 0,
+        },
+        mobile: {
+            show: true,
+            scale: 1,
+            motion: true,
+        },
+        react: {
+            opacityDefault: 0.8,
+            opacityOnHover: 0.2,
+        }
+    });
 </script>
+
 </body>
 </html>

@@ -18,7 +18,12 @@ let includeCommonFile = function () {
     document.write('<meta property="og:url" content="http://www.ldkroom.top/"/>');
     document.write('<meta property="og:title" content="' + myName + '的个人网站"/>');
     document.write('<meta property="og:description" content="' + myName + '的个人网站"/>');
-    document.write('<meta property="og:tag" content="index"/>');
+    let strUrl = window.location.href;
+    let arrUrl = strUrl.split('/');
+    let strPage = arrUrl[arrUrl.length - 1];
+    let strPageName = strPage.split('.');
+    strPageName = strPageName ? strPageName[0] : '';
+    document.write('<meta property="og:tag" content="' + strPageName + '"/>');
     // 网站logo
     document.write('<link rel="shortcut icon" type="image/x-icon" href="/icons/yanjing.ico"/>');
     // 移动端适配
