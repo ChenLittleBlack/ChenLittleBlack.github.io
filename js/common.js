@@ -9,6 +9,7 @@ let includeCommonFile = function () {
     meta = document.createElement('meta');
     meta.setAttribute('name', 'baidu-site-verification');
     meta.setAttribute('content', 'GagKiP9e3u');
+    head.appendChild(meta);
     // 关键词
     document.write('<meta name="keywords" content="' + myName + ',陈小黑,小黑不是真的黑,LittleBlack,ChenLittleBlack,javascript,jquery,java,sql,ios,android,软件,编程,开发，live2d"/>');
     document.write('<meta name="description" content="' + myName + '的个人网站"/>');
