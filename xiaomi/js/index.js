@@ -89,4 +89,17 @@ $(function () {
         });
     });
 
+    $('#btn_submit2').on('click', function () {
+        alert("不是");
+        alert("绝对不是");
+        alert("不管你怎么关");
+        alert("都不是");
+        alert("我说不是");
+        alert("就不是");
+        alert("就算你再点");
+        alert("那也不是");
+        alert("不是不是");
+        alert("不~~~是！");
+    });
+
 });
