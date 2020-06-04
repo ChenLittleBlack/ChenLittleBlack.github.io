@@ -52,7 +52,7 @@ let showNav = function () {
             console.log('获取导航栏错误');
         }
     });
-}
+};
 
 /**
  * 导航栏变化
@@ -76,4 +76,4 @@ let navBarChange = function (options) {
             "box-shadow": "none"
         });
     }
-}
+};
