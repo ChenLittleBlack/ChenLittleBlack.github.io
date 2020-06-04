@@ -8,7 +8,7 @@
 </head>
 <body style="min-height: 2000px;">
 <!--导航菜单-->
-<nav id="navbar" class="navbar"></nav>
+<div id="navbar_div"></div>
 
 <!--背景动画-->
 <canvas id="canvas-background"></canvas>
@@ -21,8 +21,6 @@
 
 <!--公共js-->
 <script type="text/javascript" src="/js/common.js"></script>
-<!--导航栏js-->
-<script type="text/javascript" src="/nav/js/nav_bar.js"></script>
 <!--页面js-->
 <script type="text/javascript" src="/index/js/index.js"></script>
 <!--背景动画所需js-->
@@ -34,7 +32,7 @@
 <script type="text/javascript">
     L2Dwidget.init({
         model: {
-            jsonPath: '/live2d/cat/tororo/assets/tororo.model.json',
+            jsonPath: '/frame/live2d/cat/tororo/assets/tororo.model.json',
         },
         display: {
             superSample: 2,

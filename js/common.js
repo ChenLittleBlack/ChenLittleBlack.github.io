@@ -2,13 +2,38 @@
  * 设置公共文件等
  */
 let setCommon = function () {
+    let myName = '陈祯乐';
+    let head = document.head || document.getElementsByTagName('head')[0];
+    let meta, link;
     /**
      * jQuery
      */
     document.write('<script type="text/javascript" src="/js/jquery/jquery-3.3.1.min.js"></script>');
-    let myName = '陈祯乐';
-    let head = document.head || document.getElementsByTagName('head')[0];
-    let meta, link;
+    /**
+     * 引入bootstrap
+     * @type {HTMLLinkElement}
+     */
+    // <link rel="stylesheet" type="text/css" href="/frame/bootstrap-4.5.0/css/bootstrap.min.css"/>
+    link = document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+    link.setAttribute('type', 'text/css');
+    link.setAttribute('href', '/frame/bootstrap-4.5.0/css/bootstrap.min.css');
+    head.appendChild(link);
+    document.write('<script type="text/javascript" src="/frame/bootstrap-4.5.0/js/bootstrap.bundle.min.js"></script>');
+    /**
+     * 公共css
+     * @type {HTMLLinkElement}
+     */
+    // <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+    link = document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+    link.setAttribute('type', 'text/css');
+    link.setAttribute('href', '/css/common.css');
+    head.appendChild(link);
+    /**
+     * 导航栏
+     */
+    document.write('<script type="text/javascript" src="/nav/js/nav_bar_btsp.js"></script>');
     /**
      * 百度站长平台验证
      * @type {HTMLMetaElement}
@@ -56,16 +81,17 @@ let setCommon = function () {
     meta.setAttribute('property', 'og:description');
     meta.setAttribute('content', myName + '的个人网站');
     head.appendChild(meta);
-    // 获取当前url文件名
-    let strUrl = window.location.href;
-    let arrUrl = strUrl.split('/');
-    let strPage = arrUrl[arrUrl.length - 1];
-    let strPageName = strPage.split('.');
-    strPageName = strPageName ? strPageName[0] : '';
+    // 获取当前页面文件路径
+    let pathName = window.location.pathname;
+    let pathNameArr = pathName.split('/');
+    // 获取文件名并去掉后缀
+    let fileName = pathNameArr[pathNameArr.length - 1];
+    let fileNameArr = fileName.split('.');
+    let fileStr = fileNameArr ? fileNameArr[0] : '';
     // <meta property="og:tag" content="' + strPageName + '"/>
     meta = document.createElement('meta');
     meta.setAttribute('property', 'og:tag');
-    meta.setAttribute('content', strPageName);
+    meta.setAttribute('content', fileStr);
     head.appendChild(meta);
     /**
      * 移动端适配
@@ -91,16 +117,6 @@ let setCommon = function () {
     link.setAttribute('rel', 'bookmark');
     link.setAttribute('type', 'image/x-icon');
     link.setAttribute('href', '/icons/yanjing.ico');
-    head.appendChild(link);
-    /**
-     * 公共css
-     * @type {HTMLLinkElement}
-     */
-    // <link rel="stylesheet" type="text/css" href="/css/common.css"/>
-    link = document.createElement('link');
-    link.setAttribute('rel', 'stylesheet');
-    link.setAttribute('type', 'text/css');
-    link.setAttribute('href', '/css/common.css');
     head.appendChild(link);
 }
 
