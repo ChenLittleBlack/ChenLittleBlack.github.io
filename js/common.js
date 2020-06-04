@@ -31,6 +31,24 @@ let setCommon = function () {
     link.setAttribute('href', '/css/common.css');
     head.appendChild(link);
     /**
+     * 移动端适配
+     * @type {HTMLMetaElement}
+     */
+    // <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    meta = document.createElement('meta');
+    meta.setAttribute('name', 'viewport');
+    meta.setAttribute('content', 'width=device-width, initial-scale=1, shrink-to-fit=no');
+    head.appendChild(meta);
+    /**
+     * 浏览器渲染模式
+     * @type {HTMLMetaElement}
+     */
+    // <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    meta = document.createElement('meta');
+    meta.setAttribute('http-equiv', 'X-UA-Compatible');
+    meta.setAttribute('content', 'IE=edge, chrome=1');
+    head.appendChild(meta);
+    /**
      * 导航栏
      */
     document.write('<script type="text/javascript" src="/nav/js/nav_bar_btsp.js"></script>');
@@ -92,15 +110,6 @@ let setCommon = function () {
     meta = document.createElement('meta');
     meta.setAttribute('property', 'og:tag');
     meta.setAttribute('content', fileStr);
-    head.appendChild(meta);
-    /**
-     * 移动端适配
-     * @type {HTMLMetaElement}
-     */
-    // <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    meta = document.createElement('meta');
-    meta.setAttribute('name', 'viewport');
-    meta.setAttribute('content', 'width=device-width, initial-scale=1, shrink-to-fit=no');
     head.appendChild(meta);
     /**
      * 网站logo
