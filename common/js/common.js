@@ -24,11 +24,11 @@ let setCommon = function () {
      * 公共css
      * @type {HTMLLinkElement}
      */
-    // <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+    // <link rel="stylesheet" type="text/css" href="/common/css/common.css"/>
     link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('type', 'text/css');
-    link.setAttribute('href', '/css/common.css');
+    link.setAttribute('href', '/common/css/common.css');
     head.appendChild(link);
     /**
      * 移动端适配

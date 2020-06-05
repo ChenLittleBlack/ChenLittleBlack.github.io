@@ -5,7 +5,7 @@ echo ##### compressing css #####
 
 
 
-set FILE_PATH=..\css\common.css
+set FILE_PATH=..\common\css\common.css
 echo ## FILE_PATH: %FILE_PATH%
 type %FILE_PATH% > tmp.css
 set BUILD_STR=
@@ -85,7 +85,7 @@ echo ##### compressing js #####
 
 
 
-set FILE_PATH=..\js\common.js
+set FILE_PATH=..\common\js\common.js
 echo ## FILE_PATH: %FILE_PATH%
 type %FILE_PATH% > tmp.js
 set BUILD_STR=
