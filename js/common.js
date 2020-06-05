@@ -53,15 +53,6 @@ let setCommon = function () {
      */
     document.write('<script type="text/javascript" src="/nav/js/nav_bar_btsp.js"></script>');
     /**
-     * 百度站长平台验证
-     * @type {HTMLMetaElement}
-     */
-    // <meta name="baidu-site-verification" content="GagKiP9e3u"/>
-    /*meta = document.createElement('meta');
-    meta.setAttribute('name', 'baidu-site-verification');
-    meta.setAttribute('content', 'GagKiP9e3u');
-    head.appendChild(meta);*/
-    /**
      * 关键词
      * @type {HTMLMetaElement}
      */
