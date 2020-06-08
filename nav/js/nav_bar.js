@@ -59,21 +59,21 @@ let showNav = function () {
  * @param options
  */
 let navBarChange = function (options) {
-    let navbar = $("#navbar");
+    let navbar = $('#navbar');
     // 滚动距离不到顶部时，导航栏背景为白色
     if ($(document).scrollTop() > 0) {
         navbar.css({
-            "padding": "0px 5%",
-            "background": "#FFFFFF",
-            "box-shadow": "0 0 20px #C9C9C9"
+            'padding': '0px 5%',
+            'background': '#FFFFFF',
+            'box-shadow': '0 0 20px #C9C9C9'
         });
     }
     // 滚动到顶部时，导航栏背景为透明
     if ($(document).scrollTop() === 0) {
         navbar.css({
-            "padding": "20px 5%",
-            "background": "transparent",
-            "box-shadow": "none"
+            'padding': '20px 5%',
+            'background': 'transparent',
+            'box-shadow': 'none'
         });
     }
 };

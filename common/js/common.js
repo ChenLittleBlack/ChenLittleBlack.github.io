@@ -118,9 +118,80 @@ let setCommon = function () {
     link.setAttribute('type', 'image/x-icon');
     link.setAttribute('href', '/icons/yanjing.ico');
     head.appendChild(link);
-}
+};
 
 /**
  * 设置公共文件等
  */
 setCommon();
+
+/**
+ * 睡眠
+ * @param ms
+ * @returns {Promise<unknown>}
+ */
+function sleep(ms) {
+    return new Promise(function (resolve, reject) {
+        setTimeout(resolve, ms);
+    });
+}
+
+/**
+ * 获取mask
+ */
+let maskHtml = '';
+let getMaskHtml = function () {
+    sleep(500).then(() => {
+        $.ajax({
+            type: 'GET',
+            dataType: 'html',
+            url: '/common/mask.html',
+            success: function (result) {
+                maskHtml = result;
+            },
+            error: function (e) {
+                console.log('获取mask层错误');
+            }
+        });
+    });
+};
+
+/**
+ * 获取mask
+ */
+getMaskHtml();
+
+/**
+ * 显示mask
+ * @param options
+ */
+let maskDiv = null;
+let showMask = function (options) {
+    // 如果有遮罩，则销毁
+    if (maskDiv) {
+        hideMask();
+    }
+    options = options || {};
+    let el = options.el || 'body';
+    // 动态添加html
+    let mask_div = document.createElement('div');
+    $(mask_div).attr('id', 'mask_div');
+    $(mask_div).addClass('mask-div');
+    $(mask_div).html(maskHtml);
+    maskDiv = mask_div;
+    $(el).append(mask_div);
+};
+
+/**
+ * 隐藏mask
+ * @param options
+ */
+let hideMask = function (options) {
+    // 获取maskDiv
+    if (!maskDiv) {
+        maskDiv = $("#mask_div") || null;
+    }
+    // 移除
+    maskDiv.remove();
+    maskDiv = null;
+}

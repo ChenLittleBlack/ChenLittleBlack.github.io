@@ -6,8 +6,6 @@ let activeMenu = 'index';
 $(function () {
     // 显示导航栏
     showNav();
-    // 导航栏变化
-    navBarChange();
     // 滚动监听导航栏变化
     $(window).scroll(function () {
         // 导航栏变化
@@ -61,6 +59,8 @@ let showNav = function () {
                 // 给当前li添加选中样式
                 activeLi.addClass(ACTIVE_CLASS);
             }
+            // 导航栏变化
+            navBarChange();
         },
         error: function (e) {
             console.log('获取导航栏错误');
@@ -73,21 +73,13 @@ let showNav = function () {
  * @param options
  */
 let navBarChange = function (options) {
-    let navbar = $("#navbar");
+    let navbar = $('#navbar');
     // 滚动距离不到顶部时，导航栏背景为白色
     if ($(document).scrollTop() > 0) {
-        navbar.css({
-            "padding": "0px 5%",
-            "background": "#FFFFFF",
-            "box-shadow": "0 0 20px #C9C9C9"
-        });
+        navbar.css('cssText', 'padding: 0px 5%;background-color: #FFFFFF!important;box-shadow: 0 0 20px #C9C9C9;');
     }
     // 滚动到顶部时，导航栏背景为透明
     if ($(document).scrollTop() === 0) {
-        navbar.css({
-            "padding": "20px 5%",
-            "background": "transparent",
-            "box-shadow": "none"
-        });
+        navbar.css('cssText', 'padding: 20px 5%;background-color: transparent!important;box-shadow: none;');
     }
 };

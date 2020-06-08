@@ -1,10 +1,10 @@
 .navbar {
     padding: 20px 5%;
-    background: transparent;
+    background-color: transparent;
     /*font-family: "PingFang-SC-Semibold", "PingFang-SC-Medium", "微软雅黑", serif;*/
     font-weight: bold;
-    transition: padding 0.5s ease-in-out, background 0.5s ease-in-out;
-    z-index: 999;
+    transition: padding 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    /*z-index: 999;*/
 }
 
 .nav-logo {

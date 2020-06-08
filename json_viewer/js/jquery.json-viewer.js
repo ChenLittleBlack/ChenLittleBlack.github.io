@@ -112,7 +112,7 @@
       /* Transform to HTML */
       var html = json2html(json, options);
       if (isCollapsable(json))
-        html = '<a href class="json-toggle"></a>' + html;
+        html = '<a href class="json-toggle">转换结果: </a>' + html;
 
       /* Insert HTML in target DOM element */
       $(this).html(html);

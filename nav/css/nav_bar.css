@@ -9,9 +9,9 @@ a, a:active, a:visited {
     right: 0;
     height: 50px;
     padding: 20px 5%;
-    background: transparent;
+    background-color: transparent;
     font-family: "PingFang-SC-Semibold", "PingFang-SC-Medium", "微软雅黑", serif;
-    transition: padding 0.5s ease-in-out, background 0.5s ease-in-out;
+    transition: padding 0.5s ease-in-out, background-color 0.5s ease-in-out;
     z-index: 999;
 }
 
