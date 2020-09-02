@@ -121,77 +121,66 @@ let setCommon = function () {
 };
 
 /**
- * 设置公共文件等
+ * 当前js类
  */
-setCommon();
+class CommonJs {
+    /**
+     * 构造函数
+     */
+    constructor() {
+        // mask html
+        this.maskHtml =
+            '<svg id="mask_svg" class="mask-svg" width="100" height="100">' +
+            '   <circle class="mouth" cx="50" cy="50" r="14"></circle>' +
+            '   <circle class="eye" cx="50" cy="50" r="14"></circle>' +
+            '</svg>';
+        // mask对象
+        this.maskObj = null;
+    }
 
-/**
- * 睡眠
- * @param ms
- * @returns {Promise<unknown>}
- */
-function sleep(ms) {
-    return new Promise(function (resolve, reject) {
-        setTimeout(resolve, ms);
-    });
-}
-
-/**
- * 获取mask
- */
-let maskHtml = '';
-let getMaskHtml = function () {
-    sleep(500).then(() => {
-        $.ajax({
-            type: 'GET',
-            dataType: 'html',
-            url: '/common/mask.html',
-            success: function (result) {
-                maskHtml = result;
-            },
-            error: function (e) {
-                console.log('获取mask层错误');
-            }
+    /**
+     * 睡眠
+     * @param ms
+     * @returns {Promise<unknown>}
+     */
+    sleep(ms) {
+        return new Promise(function (resolve, reject) {
+            setTimeout(resolve, ms);
         });
-    });
-};
-
-/**
- * 获取mask
- */
-getMaskHtml();
-
-/**
- * 显示mask
- * @param options
- */
-let maskDiv = null;
-let showMask = function (options) {
-    // 如果有遮罩，则销毁
-    if (maskDiv) {
-        hideMask();
     }
-    options = options || {};
-    let el = options.el || 'body';
-    // 动态添加html
-    let mask_div = document.createElement('div');
-    $(mask_div).attr('id', 'mask_div');
-    $(mask_div).addClass('mask-div');
-    $(mask_div).html(maskHtml);
-    maskDiv = mask_div;
-    $(el).append(mask_div);
-};
 
-/**
- * 隐藏mask
- * @param options
- */
-let hideMask = function (options) {
-    // 获取maskDiv
-    if (!maskDiv) {
-        maskDiv = $("#mask_div") || null;
+    /**
+     * 显示mask
+     * @param options
+     */
+    showMask(options) {
+        // 如果有遮罩，则销毁
+        if (this.maskObj) {
+            this.hideMask();
+        }
+        options = options || {};
+        let el = options.el || 'body';
+        // 动态添加html
+        let mask_div = document.createElement('div');
+        $(mask_div).attr('id', 'mask_div');
+        $(mask_div).addClass('mask-div');
+        $(mask_div).html(this.maskHtml);
+        this.maskObj = mask_div;
+        $(el).append(mask_div);
+    };
+
+    /**
+     * 隐藏mask
+     * @param options
+     */
+    hideMask(options) {
+        // 获取maskObj
+        if (!this.maskObj) {
+            this.maskObj = $("#mask_div") || null;
+        }
+        // 移除
+        this.maskObj.remove();
+        this.maskObj = null;
     }
-    // 移除
-    maskDiv.remove();
-    maskDiv = null;
 }
+let commonJs = new CommonJs();
