@@ -1,0 +1,55 @@
+:root {
+    --font-color: #cdddf7;
+    /*--bg-color: #252525;*/
+    --bg-color: #000105;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ol li {
+    list-style-type:decimal;
+    list-style-position:inside;
+}
+
+a {
+    color: var(--font-color) !important;
+}
+
+.sc-content-item-blue {
+    position: relative;
+    border: 1px solid #0e94eab8;
+    box-shadow: inset 0 0 6px #0e94ea;
+    background: #000000c4;
+}
+
+.sc-content-item-blue::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #52bcff;
+    border-top: 2px solid #52bcff;
+}
+
+.sc-content-item-blue::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #52bcff;
+    border-bottom: 2px solid #52bcff;
+}
+
+/*兼容liMarquee*/
+.str_wrap, .str_wrap.str_active {
+    background: transparent;
+    font-size: inherit;
+}
