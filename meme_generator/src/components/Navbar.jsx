@@ -4,7 +4,7 @@ import 'bulma/css/bulma.css'
 import './layout.css'
 import getConfig from './config'
 
-const Title = "Meme",
+const Title = "首页",
     navbarItems = [
         {
             'name': '文档',
