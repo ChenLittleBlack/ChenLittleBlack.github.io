@@ -59,7 +59,7 @@ class Navbar extends Component {
                             </a>
                         )}
                         <div className="navbar-item has-dropdown is-hoverable">
-                            <a className="navbar-link" href="/">
+                            <a className="navbar-link" href="#">
                                 {menuName}
                             </a>
                             <div className="navbar-dropdown is-boxed">
