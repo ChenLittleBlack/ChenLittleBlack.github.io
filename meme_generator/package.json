@@ -1,9 +1,9 @@
 {
-  "name": "Meme-Generator",
+  "name": "meme-generator",
   "private": true,
-  "description": "Meme Generator by Wincer, build with JavaScript。",
+  "description": "Meme Generator by ChenLittleBlack, build with JavaScript。",
   "version": "1.1.0",
-  "author": "Wincer <WincerChan@gmail.com>",
+  "author": "ChenLittleBlack <191714375@qq.com>",
   "dependencies": {
     "bulma": "^0.8.0",
     "dom-to-image": "^2.6.0",
@@ -39,9 +39,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/WincerChan/Meme-generator"
+    "url": "https://github.com/ChenLittleBlack/Meme-generator"
   },
   "bugs": {
-    "url": "https://github.com/WincerChan/Meme-generator/issues"
+    "url": "https://github.com/ChenLittleBlack/Meme-generator/issues"
   }
 }

@@ -5,7 +5,7 @@ class Footer extends Component {
 
     componentDidMount() {
         console.clear()
-        console.log(` %c © Wincer's Meme | Date: ${new Date().toLocaleDateString()} %c https://github.com/WincerChan/Meme-generator `, "color: #fff; background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(0, 151, 167) 100%); padding:5px 1px;", "background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(194, 194, 194) 0%); padding:5px 0;")
+        console.log(` %c © ChenLittleBlack's Meme | Date: ${new Date().toLocaleDateString()} %c https://github.com/ChenLittleBlack/Meme-generator `, "color: #fff; background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(0, 151, 167) 100%); padding:5px 1px;", "background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(194, 194, 194) 0%); padding:5px 0;")
         const s = document.createElement('script');
         s.type = 'text/javascript';
         s.async = true;

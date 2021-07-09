@@ -3,7 +3,6 @@ import domtoimage from 'dom-to-image';
 import React, { Component } from 'react'
 import FileSaver from 'file-saver';
 import { Vendors } from "./template";
-// const Vendors = 'https://cdn.jsdelivr.net/gh/wincerchan/Meme-generator@0.3/public';
 
 const imgCaption = [
     <p>{(new Date()).getMonth() + 1 + '月' + (new Date()).getDate() + '日 天气 大火炉'}</p>,

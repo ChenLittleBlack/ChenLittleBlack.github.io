@@ -8,7 +8,7 @@ const Title = "Meme",
     navbarItems = [
         {
             'name': '文档',
-            'link': 'https://github.com/WincerChan/Meme-generator/wiki'
+            'link': 'https://github.com/ChenLittleBlack/Meme-generator/wiki'
         },
         {
             'name': '关于',
@@ -18,7 +18,7 @@ const Title = "Meme",
     menuName = '选择其它梗',
     sourceInfo = {
         'name': '源码',
-        'link': 'https://github.com/WincerChan/Meme-generator'
+        'link': 'https://github.com/ChenLittleBlack/Meme-generator'
     };
 
 class Navbar extends Component {
@@ -40,7 +40,7 @@ class Navbar extends Component {
         return (
             <nav className="navbar is-spaced has-shadow is-white" aria-label="dropdown navigation">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="https://meme.itswincer.com">
+                    <a className="navbar-item" href="https://chenlittleblack.github.io">
                         {Title}
                     </a>
                     <div className={this.state.navBarIsActive ? "navbar-burger burger is-active" : "navbar-burger burger"}

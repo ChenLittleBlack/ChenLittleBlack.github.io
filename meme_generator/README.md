@@ -1,8 +1,8 @@
 # Meme generator
 
-[![CircleCI](https://img.shields.io/circleci/project/github/WincerChan/Meme-generator.svg?style=flat-square)](https://circleci.com/gh/WincerChan/Meme-generator/tree/master)
+[![CircleCI](https://img.shields.io/circleci/project/github/ChenLittleBlack/Meme-generator.svg?style=flat-square)](https://circleci.com/gh/ChenLittleBlack/Meme-generator/tree/master)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/WincerChan/Meme-generator.svg?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ChenLittleBlack/Meme-generator.svg?style=flat-square)
 
 
 一个使用纯 JavaScript 编写的表情包生成器。
@@ -20,7 +20,7 @@
 clone 本仓库：
 
 ```bash
-git clone git@github.com:WincerChan/Meme-generator.git
+git clone git@github.com:ChenLittleBlack/Meme-generator.git
 ```
 
 ### 安装依赖
@@ -52,7 +52,7 @@ gatsby build
 
 目前动图有 6 个模板，分别是：王境泽、我说的、为所欲为、谁赞成谁反对、星际还是魔兽、打工是不可能打工的。
 
-关于添加模板见 Wiki 的[模板部分](https://github.com/WincerChan/Meme-generator/wiki/模板)。
+关于添加模板见 Wiki 的[模板部分](https://github.com/ChenLittleBlack/Meme-generator/wiki/模板)。
 
 ## 部署
 

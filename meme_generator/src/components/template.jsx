@@ -5,7 +5,7 @@ import GIF from 'gif.js';
 import omggif from 'omggif';
 import Footer from './footer'
 
-const Vendors = 'https://cdn.jsdelivr.net/gh/wincerchan/Meme-generator@0.3/public',
+const Vendors = 'https://cdn.jsdelivr.net/gh/ChenLittleBlack/Meme-generator@0.3/public',
     messages = [
         <p>服务器在国外，加载图片在晚上高峰期可能会很慢；</p>,
         <p>由于下载采用了<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Blob" rel="noopener noreferrer" target="_blank">Blob</a> 协议，故仅新版 Chrome、Firefox、Opera、Edge 支持下载，其它浏览器请点击预览后右击保存。</p>
