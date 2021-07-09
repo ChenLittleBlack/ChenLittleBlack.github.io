@@ -1,0 +1,47 @@
+{
+  "name": "Meme-Generator",
+  "private": true,
+  "description": "Meme Generator by Wincer, build with JavaScript。",
+  "version": "1.1.0",
+  "author": "Wincer <WincerChan@gmail.com>",
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "dom-to-image": "^2.6.0",
+    "file-saver": "^2.0.2",
+    "gatsby": "^2.17.13",
+    "gatsby-image": "^2.2.32",
+    "gatsby-plugin-manifest": "^2.2.27",
+    "gatsby-plugin-offline": "^3.0.20",
+    "gatsby-plugin-react-helmet": "^3.1.14",
+    "gatsby-plugin-sharp": "^2.2.38",
+    "gatsby-source-filesystem": "^2.1.36",
+    "gatsby-transformer-sharp": "^2.3.4",
+    "gif.js": "^0.2.0",
+    "omggif": "^1.0.10",
+    "prop-types": "^15.7.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "Meme"
+  ],
+  "license": "GPL3",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WincerChan/Meme-generator"
+  },
+  "bugs": {
+    "url": "https://github.com/WincerChan/Meme-generator/issues"
+  }
+}
