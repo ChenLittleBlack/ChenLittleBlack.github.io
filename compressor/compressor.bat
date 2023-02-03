@@ -65,7 +65,7 @@ echo ## BUILD_STR: %BUILD_STR%
 call %BUILD_STR%
 del tmp.css
 
-set FILE_PATH=..\json_tool\css\index.css
+set FILE_PATH=..\pet_pic\css\index.css
 echo ## FILE_PATH: %FILE_PATH%
 type %FILE_PATH% > tmp.css
 set BUILD_STR=
@@ -145,7 +145,7 @@ echo ## BUILD_STR: %BUILD_STR%
 call %BUILD_STR%
 del tmp.js
 
-set FILE_PATH=..\json_tool\js\index.js
+set FILE_PATH=..\pet_pic\js\index.js
 echo ## FILE_PATH: %FILE_PATH%
 type %FILE_PATH% > tmp.js
 set BUILD_STR=

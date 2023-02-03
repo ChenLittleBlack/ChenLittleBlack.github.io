@@ -106,17 +106,17 @@ let setCommon = function () {
      * 网站logo
      * @type {HTMLLinkElement}
      */
-    // <link rel="shortcut icon" type="image/x-icon" href="/icons/yanjing.ico"/>
+    // <link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico"/>
     link = document.createElement('link');
     link.setAttribute('rel', 'shortcut icon');
     link.setAttribute('type', 'image/x-icon');
-    link.setAttribute('href', '/icons/yanjing.ico');
+    link.setAttribute('href', '/icons/favicon.ico');
     head.appendChild(link);
     // <link rel="bookmark" type="image/x-icon" href="/icons/favicon.ico"/>
     link = document.createElement('link');
     link.setAttribute('rel', 'bookmark');
     link.setAttribute('type', 'image/x-icon');
-    link.setAttribute('href', '/icons/yanjing.ico');
+    link.setAttribute('href', '/icons/favicon.ico');
     head.appendChild(link);
 };
 
