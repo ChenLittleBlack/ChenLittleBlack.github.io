@@ -1,0 +1,12 @@
+@import "./base.css";
+@import "./variables.scss";
+@import "./transition.scss";
+@import "./mixin.scss";
+@import "./vant-fix.css";
+
+#app {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: normal;
+}

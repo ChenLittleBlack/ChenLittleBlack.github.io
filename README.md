@@ -6,4 +6,4 @@
 
 
 
-[logo]: http://ldkroom.top/images/logo.png
+[logo]: http://ldkroom.icu/images/logo.png
