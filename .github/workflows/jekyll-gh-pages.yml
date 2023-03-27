@@ -29,4 +29,4 @@ jobs:
           # 部署后提交到那个分支
           branch: gh-pages
           # 这里填打包好的目录名称
-          folder: .
+          folder: dist
