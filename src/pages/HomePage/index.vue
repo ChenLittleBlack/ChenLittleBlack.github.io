@@ -25,8 +25,8 @@ export default {
 .app-first-div {
   display: flex;
   flex-flow: column nowrap;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: calc(100vh - 136px);
 
   .logo-div {
     display: flex;
