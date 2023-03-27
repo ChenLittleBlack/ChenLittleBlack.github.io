@@ -23,8 +23,8 @@ jobs:
           npm run build:prd
 
       # 部署
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: gh-pages # 部署后提交到那个分支
           folder: . # 这里填打包好的目录名称
