@@ -1,0 +1,1 @@
+import{_ as e,o,a as r}from"./main.60caa9f6.js";const t={name:"ErrorPage404"};function a(n,c,s,_,p,f){return o(),r("div",null,"\u627E\u4E0D\u5230\u8BE5\u9875\u9762")}const d=e(t,[["render",a]]);export{d as default};
