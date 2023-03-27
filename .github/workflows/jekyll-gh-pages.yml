@@ -13,14 +13,14 @@ jobs:
     # 步骤
     steps:
       # 官方action，将代码拉取到虚拟机
-      - name: Checkout  ️
+      - name: Checkout
         uses: actions/checkout@v3
 
       # 安装依赖、打包，如果提前已打包好无需这一步
       - name: Install and Build
         run: |
           npm install
-          npm run build
+          npm run build:prd
 
       # 部署
       - name: Deploy
