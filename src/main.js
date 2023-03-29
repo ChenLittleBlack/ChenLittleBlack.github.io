@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
-import '@/styles/main.scss'
 
 // 创建应用
 import App from '@/App.vue'
@@ -22,5 +21,7 @@ app.config.globalProperties.$showImagePreview = showImagePreview
 import router from '@/router'
 app.use(router)
 import '@/router/router-guard'
+
+import '@/styles/main.scss'
 
 app.mount('#entrance')

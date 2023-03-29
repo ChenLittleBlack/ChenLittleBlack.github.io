@@ -1,8 +1,9 @@
-@import "./base.css";
+@import "./base.scss";
 @import "./variables.scss";
 @import "./transition.scss";
 @import "./mixin.scss";
-@import "./vant-fix.css";
+@import "./vant-root.scss";
+@import "./vant-fix.scss";
 
 #app {
   display: flex;
