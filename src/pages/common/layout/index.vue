@@ -1,21 +1,21 @@
 <template>
   <!-- 框架视图定义 -->
   <div class="app-wrapper">
+    <!--导航栏-->
+    <nav-bar />
+    <!--通知栏-->
+    <notice-bar />
     <!-- 中间框架填充的部分 -->
     <div class="main-container">
-      <!--导航栏-->
-      <nav-bar />
-      <!--通知栏-->
-      <notice-bar />
       <van-pull-refresh v-model="loading" success-text="刷新成功" @refresh="refreshEvent">
         <!--主要内容区域-->
         <app-main :key="componentKey" />
         <!--回到顶部-->
         <van-back-top />
       </van-pull-refresh>
-      <!--标签栏-->
-      <tab-bar />
     </div>
+    <!--标签栏-->
+    <tab-bar />
   </div>
 </template>
 
@@ -69,7 +69,14 @@ export default {
 <style lang="scss" scoped>
 .app-wrapper {
   position: relative;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100vw;
+  height: 100vh;
+
+  .main-container {
+    flex: 1;
+    overflow-y: auto;
+  }
 }
 </style>
