@@ -71,3 +71,66 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*全局滚动条样式开始*/
+/*滚动条整体部分*/
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+/*滚动条的轨道*/
+*::-webkit-scrollbar-track {
+  background-color: rgba(205, 205, 205, .3);
+}
+/*滚动条里面的小方块，能向上向下移动*/
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(144, 147, 153, .3);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(144, 147, 153, .5)!important;
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: rgba(144, 147, 153, .7)!important;
+}
+/*滚动条两端的按钮*/
+::-webkit-scrollbar-button:single-button {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-style: solid;
+  background-color: rgba(205, 205, 205, .3);
+}
+::-webkit-scrollbar-button:single-button:hover {
+  background-color: rgba(205, 205, 205, .5);
+}
+::-webkit-scrollbar-button:single-button:active {
+  background-color: rgba(205, 205, 205, .7);
+}
+/*滚动条两端的按钮-上箭头*/
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 4px 4px 4px;
+  border-color: transparent transparent #555555 transparent;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #444444 transparent;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  border-color: transparent transparent #333333 transparent;
+}
+/*滚动条两端的按钮-下箭头*/
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 4px 4px 0 4px;
+  border-color: #555555 transparent transparent transparent;
+}
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #444444 transparent transparent transparent;
+}
+::-webkit-scrollbar-button:vertical:single-button:increment:active {
+  border-color: #333333 transparent transparent transparent;
+}
+/*边角，即两个滚动条的交汇处*/
+*::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+/*全局滚动条样式结束*/
