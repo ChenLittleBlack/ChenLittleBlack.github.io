@@ -22,8 +22,7 @@ export default {
       menus: [
         { text: '让我帮你百度一下', icon: 'search' },
         { text: '每日一宠', icon: 'smile-o', routeName: 'RandomPetPic', badge: 'Hot' },
-        { text: '空', icon: 'add-o' },
-        { text: '空', icon: 'add-o' },
+        { text: 'Github', icon: 'smile-o', url: 'https://github.com/ChenLittleBlack/ChenLittleBlack.github.io', badge: 'Home' },
         { text: '空', icon: 'add-o' },
         { text: '空', icon: 'add-o' },
         { text: '空', icon: 'add-o' },
