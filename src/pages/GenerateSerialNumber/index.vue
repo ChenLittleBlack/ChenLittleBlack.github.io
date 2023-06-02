@@ -71,8 +71,8 @@ export default {
       this.showLoading('生成中')
       try {
         // 生成流水号前的校验
-        const startVal = this.formData.startVal
-        const endVal = this.formData.endVal
+        const startVal = Number(this.formData.startVal)
+        const endVal = Number(this.formData.endVal)
         if (!startVal) {
           throw new Error('起始值必须大于0')
         }
