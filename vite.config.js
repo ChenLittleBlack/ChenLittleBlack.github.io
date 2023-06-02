@@ -7,6 +7,8 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
+const timeStamp = new Date().getTime()
+
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
   console.info('模式：' + mode)
@@ -93,6 +95,9 @@ export default defineConfig(({ command, mode }) => {
       rollupOptions: {
         input: {
           main: resolve('src/index.html')
+        },
+        output: {
+          chunkFileNames: `[name]-[hash]-${timeStamp}.js`
         }
       }
     }
