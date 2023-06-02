@@ -81,6 +81,19 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/GenerateSerialNumber',
+    component: Layout,
+    meta: { title: '流水号生成' },
+    children: [
+      {
+        path: '/GenerateSerialNumber',
+        name: 'GenerateSerialNumber',
+        meta: { title: '流水号生成' },
+        component: () => import('@/pages/GenerateSerialNumber/index')
+      }
+    ]
+  },
   // 不存在的路径就重定向到404错误页（必须放在路由最后）
   {
     path: '/:pathMatch(.*)*',
